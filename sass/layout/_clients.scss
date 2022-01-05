@@ -1,0 +1,32 @@
+.clients-list {
+  @extend %align-list;
+  justify-content: space-between;
+}
+
+.clients-list__link {
+  width: 170px;
+  height: 92px;
+  @extend %align-list;
+  @extend %content-center;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  @extend %transit;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    .clients-list__icon {
+      fill: var(--accent-color);
+    }
+  }
+
+  .clients-list__icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %transit;
+  }
+}

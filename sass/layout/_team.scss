@@ -1,0 +1,34 @@
+.team__section {
+  background-color: var(--portfolio-button-color);
+}
+
+.team__container {
+  text-align: center;
+}
+
+.team-list {
+  @extend %align-list;
+  justify-content: space-between;
+}
+
+.team-list__card {
+  justify-content: space-between;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__textbox
+{  padding-top: 30px;
+  padding-bottom: 30px;}
+  
+.team-list__text {
+  text-align: center;
+  @include font(16px, 400, 1.18, 00.03em);
+  margin-top: 10px;
+  color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+

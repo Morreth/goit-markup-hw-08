@@ -1,0 +1,70 @@
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.motto__btn {
+  padding: 10px 32px;
+  background-color: var(--main-btn-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  &:active {
+    background-color: var(--second-title-color);
+  }
+}
+
+.modal-window__btn {
+  padding: 10px 32px;
+  background-color: var(--main-btn-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  &:active {
+    background-color: var(--second-title-color);
+  }
+}
+
+.works-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.works-button {
+  height: 38px;
+  background: var(--portfolio-button-color);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

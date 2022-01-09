@@ -1,11 +1,22 @@
 .footer {
   background-color: var(--footer-bcg-color);
+}
+
+
+.footer__container {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    height: 252px;
+  }
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
+
+.left-right-position {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer-logo {

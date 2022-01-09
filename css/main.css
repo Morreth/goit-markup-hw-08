@@ -23,7 +23,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-container, .contacts-list, .contacts-list__link, .principles-section__box, .whaddowedo-list__box, .clients-list__item .clients-list__link, .footer-social-link, .footer-subscribe__input, .footer-subscribe__btn {
+.contacts-list, .contacts-list__link, .principles-section__box, .whaddowedo-list__box, .clients-list__item .clients-list__link, .footer-social-link, .footer-subscribe__input, .footer-subscribe__btn {
   align-items: center;
   justify-content: center;
 }
@@ -320,6 +320,22 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.header-container {
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 320px) {
+  .header-container {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    height: 80px;
+  }
+}
+
 .header-navigation {
   display: flex;
   align-items: center;
@@ -327,9 +343,15 @@ body {
 
 .header-logo {
   color: var(--logo-color);
-  padding-right: 93px;
+  margin-right: 88px;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
+  }
 }
 
 .header-logo:focus, .header-logo:hover {
@@ -347,6 +369,13 @@ body {
 .header-list {
   display: flex;
   align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+  }
 }
 
 .header-list__item {
@@ -354,16 +383,20 @@ body {
 }
 
 .header-list__item:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .header-list__link {
+  position: relative;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: none;
   color: var(--second-title-color);
-  position: relative;
 }
 
 .header-list__link:hover, .header-list__link:focus {
@@ -382,8 +415,26 @@ body {
   background-color: var(--accent-color);
   position: absolute;
   display: block;
-  bottom: -28px;
   left: 0;
+}
+
+.contacts {
+  padding-left: 82px;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts-list {
@@ -406,20 +457,51 @@ body {
 }
 
 .contacts-list__link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
   color: var(--main-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts-list__link {
+    padding-right: 15px;
+    margin-top: 10px;
+  }
 }
 
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-color);
 }
 
+.open-menu-btn {
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+}
+
+.open-menu-btn:hover > .open-menu-btn__svg {
+  fill: var(--accent-color);
+}
+
 .motto__section {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mottoback.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_images/mottoback.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -725,12 +807,24 @@ body {
 
 .footer {
   background-color: var(--footer-bcg-color);
+}
+
+.footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    height: 252px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .left-right-position {
+    display: flex;
+  }
 }
 
 .footer-logo {

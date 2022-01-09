@@ -669,7 +669,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: -30px;
+    margin-left: 30px;
   }
 }
 
@@ -712,20 +712,6 @@ body {
 
 .clients-list__item .clients-list__link:hover .clients-list__icon, .clients-list__item .clients-list__link:focus .clients-list__icon {
   fill: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list__item .clients-list__link:hover, .clients-list__item .clients-list__link:focus {
-    max-width: 170px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list__item .clients-list__link:hover, .clients-list__item .clients-list__link:focus {
-    max-width: 170px;
-  }
 }
 
 .clients-list__item .clients-list__link .clients-list__icon {

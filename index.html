@@ -113,7 +113,7 @@
             <picture>
                 <source srcset="./images/hero_images/ruki1x.jpg 1x,
                 ./images/hero_images/ruki2x.jpg 2x"
-                media="(min-width 1200px)"
+                media="(min-width: 1200px)"
                 >
             </picture>
             <img src="./images/hero_images/ruki.jpg" alt="чем мы занимаемся" width="370" height="294">
@@ -142,12 +142,30 @@
     <h2 class="title-two">Наша команда</h2>
     <ul class="list team-list">
         <li class="team-list__card">
-            <img 
+            <picture> 
+                <source
                 srcset="
                 ./images/team_images/demianenko1x.jpg 1x, 
                 ./images/team_images/demianenko2x.jpg 2x
                 "
-                src="./images/team_images/demianenko.jpg" alt="Демьяненко" > <div class="team-list__textbox"> <h3 class="title-four">Игорь Демьяненко</h3><p class="team-list__text" lang="en">Product Designer</p>
+                media="(min-width: 1200px)">
+                <source
+                srcset="
+                ./images/team_images/demianenko-tab1x.jpg 1x, 
+                ./images/team_images/demianenko-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)">
+
+                <source
+                srcset="
+                ./images/team_images/demianenko-mob1x.jpg 1x, 
+                ./images/team_images/demianenko-mob2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+            <img src="./images/team_images/demianenko2x.jpg" alt="demianenko">
+            </picture>
+        
+                <div class="team-list__textbox"> <h3 class="title-four">Игорь Демьяненко</h3><p class="team-list__text" lang="en">Product Designer</p>
            
             <ul class="social-list">
                 <li class="social-list__item">
@@ -182,10 +200,30 @@
 </div>
 </li>
 
-        <li class="team-list__card"><img 
-            srcset="./images/team_images/repina1x.jpg 1x,
-            ./images/team_images/repina2x.jpg 2x"
-            src="./images/team_images/repina.jpg" alt="Репина"><div class="team-list__textbox"><h3 class="title-four">Ольга Репина</h3><p class="team-list__text" lang="en">Frontend Developer
+        <li class="team-list__card">
+            <picture> 
+                <source
+                srcset="
+                ./images/team_images/repina1x.jpg 1x, 
+                ./images/team_images/repina2x.jpg 2x
+                "
+                media="(min-width: 1200px)">
+                <source
+                srcset="
+                ./images/team_images/repina-tab1x.jpg 1x, 
+                ./images/team_images/repina-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)">
+
+                <source
+                srcset="
+                ./images/team_images/repina-mob1x.jpg 1x, 
+                ./images/team_images/repina-mob2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+            <img src="./images/team_images/repina.jpg" alt="Repina">
+            </picture>
+            <div class="team-list__textbox"><h3 class="title-four">Ольга Репина</h3><p class="team-list__text" lang="en">Frontend Developer
         </p>         
         <ul class="social-list">
             <li class="social-list__item">
@@ -219,10 +257,30 @@
 </ul>
 </div>
 </li>
-        <li class="team-list__card"><img 
-            srcset="./images/team_images/tarasov1x.jpg 1x, 
-            ./images/team_images/tarasov2x.jpg 2x"
-            src="./images/team_images/tarasov.jpg" alt="Тарасов" ><div class="team-list__textbox""><h3 class="title-four">Николай Тарасов</h3><p class="team-list__text" lang="en">Marketing</p>         
+        <li class="team-list__card">
+            <picture> 
+                <source
+                srcset="
+                ./images/team_images/tarasov1x.jpg 1x, 
+                ./images/team_images/tarasov2x.jpg 2x
+                "
+                media="(min-width: 1200px)">
+                <source
+                srcset="
+                ./images/team_images/tarasov-tab1x.jpg 1x, 
+                ./images/team_images/tarasov-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)">
+
+                <source
+                srcset="
+                ./images/team_images/tarasov-mob1x.jpg 1x, 
+                ./images/team_images/tarasov-mob2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+            <img src="./images/team_images/tarasov.jpg" alt="Тарасов" >
+            </picture>
+            <div class="team-list__textbox"><h3 class="title-four">Николай Тарасов</h3><p class="team-list__text" lang="en">Marketing</p>         
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="#">
@@ -255,10 +313,30 @@
     </ul>
 </div>
 </li>
-        <li class="team-list__card"><img 
-            srcset="./images/team_images/yermakov1x.jpg 1x,
-            ./images/team_images/yermakov2x.jpg 2x"
-            src="./images/team_images/yermakov.jpg" alt="Ермаков"><div class="team-list__textbox""><h3 class="title-four">Михаил Ермаков</h3><p class="team-list__text" lang="en">UI Designer</p>         
+        <li class="team-list__card">
+            <picture>
+                <source
+                srcset="
+                ./images/team_images/yermakov1x.jpg 1x, 
+                ./images/team_images/yermakov2x.jpg 2x
+                "
+                media="(min-width: 1200px)">
+                <source
+                srcset="
+                ./images/team_images/yermakov-tab1x.jpg 1x, 
+                ./images/team_images/tarasov-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)">
+
+                <source
+                srcset="
+                ./images/team_images/yermakov-mob1x.jpg 1x, 
+                ./images/team_images/yermakov-mob2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+            <img src="./images/team_images/yermakov2x.jpg" alt="Yermakov">
+        </picture>
+            <div class="team-list__textbox""><h3 class="title-four">Михаил Ермаков</h3><p class="team-list__text" lang="en">UI Designer</p>         
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="#">

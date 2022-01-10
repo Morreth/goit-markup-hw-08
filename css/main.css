@@ -14,7 +14,7 @@
   --motto-background-color: rgba(47, 48, 58, 0.4);
 }
 
-.whaddowedo-list, .whaddowedo-list__box, footer .footer__upper .footer-social-link, footer .footer-subscribe__btn, .works__button-list, .works-list {
+.whaddowedo-list, .whaddowedo-list__box, footer .footer__upper .footer-social-link, footer .footer-subscribe__btn, .works__button-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1413,18 +1413,28 @@ footer .footer-subscribe__btn--icon {
   justify-content: center;
 }
 
+.works-list {
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .works-list__item {
-  max-width: 370px;
-  margin-right: 30px;
+  max-width: 350px;
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 
-.works-list__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.works-list__item:nth-child(n + 7) {
-  margin-bottom: 0px;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .works-list__item {
+    max-width: 350;
+  }
 }
 
 .works-list__item:hover .works-list__item-text {
@@ -1458,11 +1468,17 @@ footer .footer-subscribe__btn--icon {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .works-list__item-text {
+    max-width: 350;
+  }
+}
+
 .works-list__card {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 20px;
   border: 1px solid #eeeeee;
 }
 

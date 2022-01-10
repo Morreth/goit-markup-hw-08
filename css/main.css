@@ -14,7 +14,7 @@
   --motto-background-color: rgba(47, 48, 58, 0.4);
 }
 
-.motto__section .whaddowedo-list, .motto__section .whaddowedo-list__box, .clients-list__item .clients-list__link, .footer-social-link, .footer-subscribe__input, .footer-subscribe__btn, .works__button-list, .works-list {
+.whaddowedo-list, .whaddowedo-list__box, .clients-list__item .clients-list__link, .footer-social-link, .footer-subscribe__input, .footer-subscribe__btn, .works__button-list, .works-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -23,7 +23,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.motto__section .whaddowedo-list__box, .clients-list__item .clients-list__link, .footer-social-link, .footer-subscribe__input, .footer-subscribe__btn {
+.whaddowedo-list__box, .clients-list__item .clients-list__link, .footer-social-link, .footer-subscribe__input, .footer-subscribe__btn {
   align-items: center;
   justify-content: center;
 }
@@ -404,6 +404,49 @@ body {
   max-height: 70px;
 }
 
+.whaddowedo {
+  display: none;
+  padding-top: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .whaddowedo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .whaddowedo {
+    display: inherit;
+  }
+}
+
+.whaddowedo-list {
+  justify-content: space-between;
+}
+
+.whaddowedo-list__item {
+  position: relative;
+}
+
+.whaddowedo-list__box {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.whaddowedo-list__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -724,43 +767,6 @@ body {
 .motto__section .motto__container {
   text-align: center;
   width: 100%;
-}
-
-.motto__section .whaddowedo-list {
-  justify-content: space-between;
-}
-
-.motto__section .whaddowedo {
-  display: none;
-  padding-top: 0px;
-}
-
-@media screen and (min-width: 1200px) {
-  .motto__section .whaddowedo {
-    display: inherit;
-  }
-}
-
-.motto__section .whaddowedo-list__item {
-  position: relative;
-}
-
-.motto__section .whaddowedo-list__box {
-  position: absolute;
-  bottom: 0;
-  height: 70px;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.motto__section .whaddowedo-list__text {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .team__section {

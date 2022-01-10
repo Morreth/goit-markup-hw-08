@@ -4,41 +4,69 @@
 
 
 .footer__container {
-  
-  @media screen and(min-width: 1200px) {
-    display: flex;
-    height: 252px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+     
+ }
+}
+
+.footer__upper {
+  @media screen and (min-width: 768px) {
+      display: flex;
+      width: 100%; 
   }
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }  
 }
 
-
-.left-right-position {
-  @media screen and(min-width: 768px) {
-    display: flex;
+.footer-logo{
+  margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      text-align: left;
   }
 }
 
-.footer-logo {
-  @extend %logo-style;
-  margin-bottom: 0px;
-  color: var(--logo-color);
-  @extend %transit;
-}
 
 .footer-contacts {
-  padding-top: 0px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      text-align: left;
+  }
 }
 
 .footer-contacts__item {
   margin-bottom: 9px;
 }
 
-.footer-contacts__link {
+.footer-address__link {
   @include font($fs: 14px, $fw: 400, $lh: 1.71, $ls: 00.03em);
   font-style: normal;
   color: var(--main-title-color);
+  margin-bottom: 9px;
+  @extend %transit;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-contacts__link {
+  @include font($fs: 14px, $fw: 400, $lh: 1.71, $ls: 00.03em);
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
   @extend %transit;
   &:hover,
@@ -118,4 +146,5 @@
 
 .footer-subscribe__btn--icon {
   margin-left: 10px;
+}
 }

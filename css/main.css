@@ -540,7 +540,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-left: auto;
-    margin-right: 40px;
   }
 }
 
@@ -768,42 +767,42 @@ body {
   width: 100%;
 }
 
-.team__section {
+.team__container {
   background-color: var(--portfolio-button-color);
 }
 
 @media screen and (min-width: 480px) {
-  .team__section {
+  .team__container {
     padding-bottom: 60px;
     align-items: center;
   }
 }
 
 @media screen and (min-width: 480px) and (min-width: 768px) {
-  .team__section {
+  .team__container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 480px) and (min-width: 1200px) {
-  .team__section {
+  .team__container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-.team__section .team__container {
+.team__container .team__container {
   text-align: center;
 }
 
-.team__section .team-list {
+.team__container .team-list {
   justify-content: space-between;
   margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
-  .team__section .team-list {
+  .team__container .team-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -812,13 +811,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .team__section .team-list {
+  .team__container .team-list {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.team__section .team-list__card {
+.team__container .team-list__card {
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -830,13 +829,13 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .team__section .team-list__card .img {
+  .team__container .team-list__card .img {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team__section .team-list__card {
+  .team__container .team-list__card {
     max-width: 270px;
     margin-bottom: 30px;
     flex-basis: calc( 100% / 2 - 30px);
@@ -845,17 +844,17 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .team__section .team-list__card {
+  .team__container .team-list__card {
     max-width: 270px;
   }
 }
 
-.team__section .team-list__textbox {
+.team__container .team-list__textbox {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team__section .team-list__text {
+.team__container .team-list__text {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -1121,7 +1120,7 @@ body {
 }
 
 .footer .footer__upper .footer-subscribe__input {
-  width: 100%;
+  width: 500px;
   height: 50px;
   background-color: var(--footer-bcg-color);
   padding-left: 16px;

@@ -1,73 +1,76 @@
 .team__container {
   background-color: var(--portfolio-button-color);
+  margin-left: 10px;
 
   @media screen and (min-width: 480px) {
     padding-bottom: 60px;
     align-items: center;
 
-@media screen and (min-width: 768px) {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-}
-
-.team__container {
-  text-align: center;
- 
-}
-
-.team-list {
-  justify-content: space-between;
-  margin-bottom: -30px;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -30px;
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    display: flex;
+
+  .team__container {
+    text-align: center;
+  }
+
+  .team-list {
     justify-content: space-between;
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -30px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-}
 
-.team-list__card {
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-align-items: center;
-margin-bottom: 30px;
-padding-left: 15px;
-padding-right: 15px;
-  @media screen and (min-width: 480px) {
-    .img {width: 100%;}
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 270px;
+  .team-list__card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    align-items: center;
     margin-bottom: 30px;
-    flex-basis: calc( 100% / 2 - 30px);
-    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: 480px) {
+      .img {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 270px;
+      margin-bottom: 30px;
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-  }
-}
 
-.team-list__textbox
-{  padding-top: 30px;
-  padding-bottom: 30px;}
-  
-.team-list__text {
-  text-align: center;
-  @include font(16px, 400, 1.18, 00.03em);
-  margin-top: 10px;
-  color: var(--main-text-color);
-  margin-bottom: 16px;
-}
+  .team-list__textbox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .team-list__text {
+    text-align: center;
+    @include font(16px, 400, 1.18, 00.03em);
+    margin-top: 10px;
+    color: var(--main-text-color);
+    margin-bottom: 16px;
+  }
 }

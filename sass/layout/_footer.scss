@@ -154,56 +154,44 @@
       margin-left: 93px;
     }
   }
-  .footer-subscribe__form {
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      text-align: center;
-    }
+  
+  .footer-subscribe__wrap {
+    display: flex;
+    justify-content: space-between;
   }
-
-.subscribe__input {
-  width: 290px;
-  @media screen and (min-width: 480px) {
-    width: 450px;
+  
+  .footer-subscribe__input {
+    width: 100%;
+    height: 50px;
+    background-color: var(--footer-bcg-color);
+    padding-left: 16px;
+    @extend %align-list;
+    @extend %content-center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    @include font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 00.03em);
+    color: var(--second-text-color);
+    margin-right: 12px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 358px;
+  
+  .subscribe-input::placeholder {
+    @include font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 00.03em);
+    color: var(--second-text-color);
   }
-  height: 50px;
-  padding-left: 16px;
-  margin-right: 12px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  color: var(--second-text-color);
-
-  & input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
+  
+  .footer-subscribe__btn {
+    width: 200px;
+    height: 50px;
+    @extend %align-list;
+    @extend %content-center;
+    @include font(16px, 700, 1.87, 00.06em);
+    color: var(--main-title-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-}
-
-
-    .footer-subscribe__btn {
-      width: 200px;
-      height: 50px;
-      @extend %align-list;
-      @extend %content-center;
-      @include font(16px, 700, 1.87, 00.06em);
-      color: var(--main-title-color);
-      background-color: var(--accent-color);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-
-    .footer-subscribe__btn--icon {
-      margin-left: 10px;
-    }
-  }
-
-}
+  
+  .footer-subscribe__btn--icon {
+    margin-left: 10px;
+  }}}

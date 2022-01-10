@@ -184,7 +184,13 @@
             </div>
         </li>
     <li class="whaddowedo-list__item">
-        <img src="./images//hero_images/mobila.jpg" alt="для мобильных устройств" width="370" height="294">
+        <picture>
+            <source srcset="./images/hero_images/mobila1x.jpg 1x,
+            ./images/hero_images/mobila2x.jpg 2x"
+            media="(min-width: 1200px)"
+            ><img src="./images//hero_images/mobila.jpg" alt="для мобильных устройств" width="370" height="294">
+        </picture>
+        
         <div class="whaddowedo-list__box">
             <p class="whaddowedo-list__text">Мобильные приложения</p>
         </div>

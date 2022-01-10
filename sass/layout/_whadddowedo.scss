@@ -1,0 +1,38 @@
+.whaddowedo {
+    background-color: #000000;
+    display: none;
+    padding-top: 0px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: none;
+      }
+    @media screen and (min-width: 1200px) {
+      display: inherit;
+    }
+  }
+
+.whaddowedo-list {
+    @extend %align-list;
+    justify-content: space-between;
+  }
+  
+
+  
+  .whaddowedo-list__item {
+    position: relative;
+  }
+  .whaddowedo-list__box {
+    position: absolute;
+    bottom: 0;
+    @extend %align-list;
+    @extend %content-center;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .whaddowedo-list__text {
+    @include font(14px, 700, 1.14, 00.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }

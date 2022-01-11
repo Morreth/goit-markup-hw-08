@@ -131,19 +131,20 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: -25px;
-  margin-right: 25px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .section {
-    min-width: 480px;
+    min-width: 320px;
+    padding-top: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    width: 100%;
+    width: 768px;
+    padding-top: 30px;
   }
 }
 
@@ -598,6 +599,9 @@ body {
   height: 40px;
   background-color: transparent;
   border: none;
+  margin-right: 22px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 @media screen and (min-width: 768px) {
@@ -710,6 +714,9 @@ body {
 }
 
 .motto__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -725,9 +732,6 @@ body {
 @media screen and (min-width: 480px) {
   .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-mob.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -761,6 +765,14 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) and (min-width: 320px) {
+  .motto__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 480px) and (min-width: 768px) {
   .motto__section {
     width: 768px;
@@ -780,6 +792,10 @@ body {
 .motto__section .motto__container {
   text-align: center;
   width: 100%;
+}
+
+.motto__btn {
+  margin: 0 auto;
 }
 
 .team__section {

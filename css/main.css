@@ -1264,6 +1264,13 @@ footer {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 400px;
+    height: 609px;
+  }
+}
+
 .modal__close-btn {
   width: 30px;
   height: 30px;
@@ -1301,6 +1308,16 @@ footer {
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-form__title {
+    font-size: 16px;
+    line-height: 1.17;
+    align-items: baseline;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1412,6 +1429,15 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-form__check-text {
+    font-size: 10px;
+    line-height: 1.17;
+    align-items: baseline;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 480px) {

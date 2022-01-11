@@ -1,28 +1,25 @@
 .team__section {
   background-color: var(--portfolio-button-color);
-  margin-left: 10px;
-
+ 
   @media screen and (min-width: 480px) {
-    padding-bottom: 60px;
+    width: 100%;   
     align-items: center;
 
     @media screen and (min-width: 768px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      width: 100%;
     }
     @media screen and (min-width: 1200px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
     }
   }
 
   .team__container {
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .team-list {
     justify-content: space-between;
-    margin-bottom: -30px;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;

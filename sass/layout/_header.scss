@@ -1,11 +1,8 @@
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__logo {
@@ -127,7 +124,7 @@
   margin-top: 22px;
   margin-bottom: 22px;
   @media screen and(min-width: 768px) {
-  display: none;
+    display: none;
   }
   &:hover > .open-menu-btn__svg {
     fill: var(--accent-color);
@@ -142,7 +139,7 @@
   z-index: 5;
   padding-top: 48px;
   padding-bottom: 48px;
-  .container {
+  .mob-menu__container {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -181,6 +178,10 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.current__link {
+  color: var(--accent-color);
 }
 
 .mob-menu-contacts-list {

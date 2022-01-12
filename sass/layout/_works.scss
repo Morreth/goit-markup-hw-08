@@ -1,6 +1,11 @@
 .works__container {
   padding-top: 60px;
   padding-bottom: 40px;
+  @media screen and (min-width: 1200px){
+   padding-top: 94px;
+   padding-bottom: 94px;
+  }
+
 }
 .works-button {
   height: 38px;
@@ -26,7 +31,6 @@
 
 .works__button-list {
   @extend %align-list;
- 
   margin-top: 40px;
   margin-bottom: 50px;
 
@@ -44,7 +48,7 @@
 
   @media screen and (min-width: 1200px){
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
     justify-content: center;
   }

@@ -16,15 +16,19 @@
 }
 
 .title-two {
-  @include font(36px, 700, 1.16, 00.03em);
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--second-title-color);
-  @media screen and (min-width: 768px) {
+color: var(--second-title-color);
+  @media screen and (min-width: 450px) {
     @include font(28px, 700, 1.17, 00.03em);
     margin-bottom: 30px;
+    text-align: center;
+}
+@media screen and (min-width: 1200px ) {
+  @include font(36px, 700, 1.16, 00.03em);
+  text-align: center;
+  margin-bottom: 50px;  
 }
 }
+
 
 .title-three {
   @include font(14px, 700, 1.14, 00.03em);

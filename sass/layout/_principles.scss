@@ -1,6 +1,14 @@
-.principles__container {
+.principles__section {
   padding-top: 60px;
   padding-bottom: 60px;
+  
+  @media screen and (min-width: 1200px) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+}
+
+.principles__container {
   display: flex;
 }
 

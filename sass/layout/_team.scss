@@ -1,5 +1,7 @@
 .team__section {
   background-color: var(--portfolio-button-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
  
   @media screen and (min-width: 480px) {
     width: 100%;   
@@ -9,13 +11,14 @@
       width: 100%;
     }
     @media screen and (min-width: 1200px) {
-    }
+      padding-top: 94px;
+      padding-bottom: 94px;
+      }
   }
 
   .team__container {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
   }
 
   .team-list {

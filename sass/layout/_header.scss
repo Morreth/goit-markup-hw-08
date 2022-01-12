@@ -1,8 +1,11 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .header__logo {
@@ -130,10 +133,12 @@
     fill: var(--accent-color);
   }
 }
+// mobile menu
 .mob-menu {
   position: fixed;
   background-color: #ffffff;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 5;

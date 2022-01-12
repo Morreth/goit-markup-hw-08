@@ -132,24 +132,6 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
-  .section {
-    min-width: 320px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    min-width: 1200px;
-  }
-}
-
 .btn {
   border: none;
   border-radius: 4px;
@@ -249,6 +231,16 @@ body {
   color: var(--second-title-color);
 }
 
+@media screen and (min-width: 768px) {
+  .title-two {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
 .title-three {
   font-size: 14px;
   font-weight: 700;
@@ -269,8 +261,8 @@ body {
 }
 
 .title-five {
-  margin-top: 60px;
   margin-bottom: 20px;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -280,9 +272,16 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .title-five {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .title-five {
     text-align: left;
+    margin-top: 0;
   }
 }
 
@@ -345,13 +344,6 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 1199.5px) {
-  .principles__container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
 .principles-section__list {
   padding: 0;
 }
@@ -373,9 +365,15 @@ body {
   text-align: left;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 450px) {
   .principles-section__item {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .principles-section__item {
+    text-align: left;
   }
 }
 
@@ -477,11 +475,14 @@ body {
   color: #ffffff;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .header__logo {
@@ -634,6 +635,7 @@ body {
   position: fixed;
   background-color: #ffffff;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 5;
@@ -733,92 +735,95 @@ body {
   background-color: rgba(33, 33, 33, 0.2);
 }
 
-.motto__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+.motto__section {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media screen and (max-width: 1199px) {
-  .motto__container {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-mob.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-mob-2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-width: 768px) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-tab.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-tab-2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-width: 1200px) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .motto__container {
+  .motto__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_images/hero-2x.jpg);
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 320px) {
-  .motto__container {
+.motto__section .motto__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+@media screen and (max-width: 1199px) {
+  .motto__section .motto__container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .motto__section .motto__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  .motto__container {
+@media screen and (min-width: 768px) {
+  .motto__section .motto__container {
     width: 768px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 1200px) {
-  .motto__container {
+@media screen and (min-width: 1200px) {
+  .motto__section .motto__container {
     width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 
-.motto__container .motto__container {
+.motto__section .motto__container {
   text-align: center;
   width: 100%;
 }
@@ -879,8 +884,6 @@ body {
   border-radius: 0px 0px 4px 4px;
   align-items: center;
   margin-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -891,7 +894,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .team__section .team-list__card {
-    max-width: 270px;
+    max-width: 354px;
     margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -1037,11 +1040,13 @@ footer {
 
 .footer__upper .footer-contacts {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__upper .footer-contacts {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1082,8 +1087,8 @@ footer {
 }
 
 .footer__upper .footer__center {
-  margin-bottom: 60px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1136,7 +1141,6 @@ footer {
 
 .footer__upper .footer__right {
   text-align: center;
-  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -1151,6 +1155,10 @@ footer {
     margin-left: 70px;
     margin-bottom: 0;
   }
+}
+
+.footer__upper .footer-subscribe {
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1287,13 +1295,6 @@ footer {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .modal {
-    width: 400px;
     height: 609px;
   }
 }
@@ -1525,7 +1526,6 @@ footer {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  margin-bottom: 15px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
